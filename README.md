@@ -92,18 +92,15 @@ Each variable prompt is modularized into:
 
 - **Question**
 - **Answer Choices**
-- **Optional Chain-of-Thought reasoning**
+- **Chain-of-Thought reasoning (Optional)**
 - **Final Output constraint**
 
 The model is instructed to conclude strictly in the format:
 
 ```
-
+(Step-by-step reasoning for CoT)
 The final answer is: X
-
 ```
-
-This ensures structured and machine-readable outputs.
 
 
 
