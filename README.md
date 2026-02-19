@@ -2,7 +2,6 @@
 
 ### A Modular Large Language Model Framework for Structured Stroke Chart Abstraction
 
----
 
 ## 📖 Overview
 
@@ -10,46 +9,6 @@ This repository provides a reproducible framework for structured clinical variab
 
 The system is designed to extract predefined procedural and clinical variables from free-text stroke reports using a standardized prompt schema.
 
-The framework supports:
-
-- Modular prompt design
-- Optional Chain-of-Thought reasoning
-- Deterministic structured output
-- Local GPU-based LLM inference
-- Reproducible environment configuration
-
----
-
-## 🧠 Research Context
-
-This project supports the research study:
-
-> **Large Language Model-Based Structured Abstraction of Endovascular Stroke Procedure Reports**
-
-The goal is to evaluate whether LLMs can reliably extract structured clinical variables such as:
-
-- Carotid stenting
-- Intracranial angioplasty
-- IV thrombolytics
-- Occlusion site
-- Final TICI score
-- Admission NIHSS
-
-from unstructured stroke procedure documentation.
-
----
-
-## 📂 Repository Structure
-
-```
-
-environment.yml
-prompt.csv
-report_clin_extract_ollama.py
-start_ollama_gpu.sh
-README.md
-
-```
 
 ### File Description
 
@@ -60,7 +19,6 @@ README.md
 | `report_clin_extract_ollama.py` | Main extraction pipeline |
 | `start_ollama_gpu.sh` | Docker-based Ollama GPU server launcher |
 
----
 
 ## ⚙️ Environment Setup
 
