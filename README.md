@@ -13,7 +13,7 @@ The system is designed to extract predefined procedural and clinical variables f
 ### File Description
 
 | File | Description |
-|||
+|-|-|
 | `environment.yml` | Conda environment configuration |
 | `prompt.csv` | Modular structured prompt definitions |
 | `report_clin_extract_ollama.py` | Main extraction pipeline |
