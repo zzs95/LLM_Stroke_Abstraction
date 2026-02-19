@@ -1,31 +1,3 @@
-很好 👍
-下面给你一个**论文级 + 可公开 GitHub 项目级别的 README.md**。
-
-包含：
-
-* 项目标题（按论文风格）
-* 项目简介
-* 方法简介
-* 文件说明
-* 环境安装
-* Docker 部署
-* 运行示例
-* Prompt 结构说明
-* 可复现性说明
-* Citation 模板
-* License 建议
-
-你可以直接复制保存为：
-
-```
-README.md
-```
-
----
-
-# 📄 README.md
-
-```markdown
 # LLM-Based Structured Clinical Variable Extraction for Endovascular Stroke Procedures
 
 ### A Modular Large Language Model Framework for Structured Stroke Chart Abstraction
