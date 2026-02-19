@@ -1,7 +1,4 @@
-# LLM-Based Structured Clinical Variable Extraction for Endovascular Stroke Procedures
-
-### A Modular Large Language Model Framework for Structured Stroke Chart Abstraction
-
+# Large Language Models for Accurate Medical Chart Abstraction: Enabling Scalable and Secure AI Deployment in Stroke
 
 ## 📖 Overview
 
@@ -131,7 +128,7 @@ If you use this framework in academic work, please cite:
 ```
 
 @article{stroke_llm_abstraction,
-title={Large Language Model-Based Structured Abstraction of Endovascular Stroke Procedure Reports},
+title={Large Language Models for Accurate Medical Chart Abstraction: Enabling Scalable and Secure AI Deployment in Stroke},
 author={Zhong, Zhusi et al.},
 journal={Under Review},
 year={2026}
