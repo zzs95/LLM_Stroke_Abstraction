@@ -13,7 +13,7 @@ The system is designed to extract predefined procedural and clinical variables f
 ### File Description
 
 | File | Description |
-|------|------------|
+|||
 | `environment.yml` | Conda environment configuration |
 | `prompt.csv` | Modular structured prompt definitions |
 | `report_clin_extract_ollama.py` | Main extraction pipeline |
@@ -31,7 +31,7 @@ conda activate ollama_py
 
 ```
 
----
+
 
 ## 🐳 Ollama Docker Deployment
 
@@ -52,7 +52,7 @@ This will:
 - Launch a local inference server
 - Expose API endpoint 
 
----
+
 
 ## 📥 Pull Model
 
@@ -64,7 +64,7 @@ docker exec -it ollama_gpu0 ollama pull qwen3:4b-q4_K_M
 
 ```
 
----
+
 
 ## 🚀 Run Clinical Extraction
 
@@ -86,7 +86,7 @@ Optional Chain-of-Thought mode:
 
 ```
 
----
+
 
 ## 🧩 Prompt Structure
 
@@ -107,12 +107,12 @@ The final answer is: X
 
 This ensures structured and machine-readable outputs.
 
----
+
 
 ## 🔬 Extracted Variables
 
 | Variable | Description |
-|-----------|------------|
+|--||
 | Carotid Stent | Cervical ICA stenting |
 | Carotid Angioplasty | Cervical ICA balloon angioplasty |
 | Intracranial Stent | Intracranial stent placement |
@@ -122,42 +122,7 @@ This ensures structured and machine-readable outputs.
 | TICI Post | Final modified TICI score |
 | NIHSS | Admission NIHSS score |
 
----
 
-## 🔁 Reproducibility
-
-- Fully local inference
-- Deterministic structured output
-- Fixed environment specification
-- Modular prompt design
-- Compatible with multi-GPU inference
-
----
-
-## 🏥 Intended Use
-
-This framework is intended for:
-
-- Clinical NLP research
-- Structured chart abstraction studies
-- LLM evaluation in medical text extraction
-- Reproducible AI research
-
-It is not intended for direct clinical decision-making.
-
----
-
-## 📊 Example Output Format
-
-```
-
-## Accession Number | carotid_stent | iv_thrombolytics | site_of_occlusion | tici_post | nihss
-
-12345678         | 1              | 1                 | 2                 | 5         | 14
-
-```
-
----
 
 ## 📜 Citation
 
@@ -174,13 +139,7 @@ year={2025}
 
 ```
 
----
 
-## 📄 License
-
-MIT License
-
----
 
 ## 🤝 Acknowledgements
 
