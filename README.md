@@ -134,7 +134,7 @@ If you use this framework in academic work, please cite:
 title={Large Language Model-Based Structured Abstraction of Endovascular Stroke Procedure Reports},
 author={Zhong, Zhusi et al.},
 journal={Under Review},
-year={2025}
+year={2026}
 }
 
 ```
