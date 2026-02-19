@@ -68,7 +68,8 @@ docker exec -it ollama_gpu0 ollama pull qwen3:4b-q4_K_M
 ```
 
 python report_clin_extract_ollama.py 
---data_path ./data 
+--data_path ./data
+--model qwen3:4b-q4_K_M
 --report_xlsx report.xlsx 
 --prompt_csv prompt.csv 
 --output results.xlsx
