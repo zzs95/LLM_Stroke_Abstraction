@@ -112,7 +112,7 @@ This ensures structured and machine-readable outputs.
 ## 🔬 Extracted Variables
 
 | Variable | Description |
-|--||
+|--|--|
 | Carotid Stent | Cervical ICA stenting |
 | Carotid Angioplasty | Cervical ICA balloon angioplasty |
 | Intracranial Stent | Intracranial stent placement |
