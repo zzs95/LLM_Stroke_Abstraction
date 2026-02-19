@@ -50,7 +50,7 @@ This will:
 - Pull the official `ollama/ollama` image
 - Bind a GPU device
 - Launch a local inference server
-- Expose API endpoint (default: http://localhost:11434)
+- Expose API endpoint 
 
 ---
 
@@ -60,7 +60,7 @@ Example:
 
 ```
 
-docker exec -it ollama_gpu0 ollama pull koesn/llama3-openbiollm-8b
+docker exec -it ollama_gpu0 ollama pull qwen3:4b-q4_K_M
 
 ```
 
