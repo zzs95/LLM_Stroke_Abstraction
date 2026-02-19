@@ -1,0 +1,64 @@
+key,question,answer_choices,cot,final_output
+carotid_stent,"Was a carotid stent placed in the cervical internal carotid artery (ICA)?","– '0' = No (did not place stent)
+– '1' = Yes (stent placed in cervical ICA)
+– 'None' = Unknown (status unclear)","1. Review the report for mention of cervical ICA stent placement.
+2. Determine whether the placement was performed.
+3. If a stent was placed, return '1'.
+4. If the report indicates no stenting, return '0'.
+5. If the report is ambiguous or lacks information, return 'None'.","Provide 0, 1 or None."
+
+carotid_angioplasty,"Was carotid angioplasty performed in the cervical internal carotid artery (ICA)?","– '0' = No (not performed)
+– '1' = Yes (performed angioplasty of the cervical ICA)
+– 'None' = Unknown (status unclear)","1. Review the procedural notes for balloon angioplasty in the cervical ICA.
+2. Determine whether angioplasty was performed.
+3. If performed, return '1'.
+4. If not performed, return '0'.
+5. If unclear or undocumented, return 'None'.","Provide 0, 1 or None."
+
+intracranial_stent,"Was an intracranial stent placed during the procedure?","– '0' = No (no intracranial stent placed)
+– '1' = Yes (intracranial stent placed)
+– 'None' = Unknown (status unclear)","1. Review the report for intracranial stent deployment.
+2. Determine whether a stent was deployed for a flow-limiting lesion.
+3. If placed, return '1'.
+4. If not placed, return '0'.
+5. If unclear, return 'None'.","Provide 0, 1 or None."
+
+intracranial_angioplasty,"Was intracranial angioplasty performed during the procedure?","– '0' = No (did not do intracranial angioplasty)
+– '1' = Yes (angioplasty performed for intracranial lesion)
+– 'None' = Unknown (status unclear)","1. Check for intracranial balloon angioplasty in the procedural notes.
+2. Determine whether it was performed.
+3. If performed, return '1'.
+4. If not performed, return '0'.
+5. If unclear, return 'None'.","Provide 0, 1 or None."
+
+iv_thrombolytics,"Was IV thrombolysis administered?","– '0' = No (no IV tPA or TNK given)
+– '1' = Yes (IV alteplase or tenecteplase given)
+– 'None' = Unknown (status unclear)","1. Identify mention of IV alteplase (tPA) or tenecteplase.
+2. Determine whether thrombolysis was administered.
+3. If administered, return '1'.
+4. If not administered, return '0'.
+5. If unclear, return 'None'.","Provide 0, 1 or None."
+
+site_of_occlusion,"What is the anatomical location of the intracranial arterial occlusion?","– '1' = ICA (Internal Carotid Artery)
+– '2' = M1 (1st segment of MCA)
+– '3' = M2 (2nd segment of MCA)
+– '4' = Basilar artery
+– '5' = Other vessel
+– 'None' = Unknown","1. Identify the occluded vessel from imaging findings or report description.
+2. Match the vessel to the corresponding code.
+3. If the vessel is not listed or unclear, return 'None'.","Provide one digit from 1–5 or None."
+
+tici_post,"What is the final modified Thrombolysis in Cerebral Infarction (TICI) score after the procedure?","– '0' = No perfusion
+– '1' = Minimal perfusion
+– '4' = 2a (partial perfusion <50%)
+– '5' = 2b (partial perfusion >50%)
+– '6' = 2c (near-complete perfusion except small distal branches)
+– '3' = 3 (complete perfusion)
+– 'None' = Unknown","1. Review the final angiographic assessment after endovascular treatment.
+2. Determine which TICI category applies.
+3. If unclear, return 'None'.","Provide one code from 0,1,4,5,6,3 or None."
+
+nihss,"What is the Admission NIHSS (National Institutes of Health Stroke Scale)?","– Integer from 0 to 42
+– 'None' = Unknown","1. Identify the NIHSS documented prior to any therapy.
+2. Ensure the value is within 0–42.
+3. If not documented or unclear, return 'None'.","Provide one integer from 0–42 or None."
